@@ -1,0 +1,66 @@
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+
+    row-gap: 1rem;
+}
+
+#main h2, #main p {
+    grid-column: 1;
+    text-wrap: balance;
+}
+
+#main h2 {
+    font-size: 5rem;
+    align-self: end;
+
+    color: var(--accent);
+}
+
+.s_sectionSub {
+    font-size: 1.3rem;
+}
+
+
+.box {
+    width: 25rem;
+    height: 20rem;
+}
+
+.subtitles {
+    font-size: 1.2rem;
+}
+
+#main > div {
+    --width: 24rem;
+
+    grid-column: 2;
+    grid-row: 1 / span 2;
+
+    display: flex;
+    overflow-x: auto;
+
+    justify-self: end;
+
+    padding-bottom: 0.5rem;
+
+    width: var(--width);
+    scroll-behavior: smooth;
+}
+
+#main > div .box {
+    flex-shrink: 0;
+    transition: opacity 250ms ease;
+}
+
+#main > div img {
+    height: 33rem;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.contint {
+    cursor: pointer;
+}

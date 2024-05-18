@@ -1,0 +1,9 @@
+.s_container::-webkit-scrollbar {
+    background-color: transparent;
+    height: 1rem;
+}
+
+.s_container::-webkit-scrollbar-thumb {
+    background-color: #0e0f19;
+    border-radius: 5e1px;
+}

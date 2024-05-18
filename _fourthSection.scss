@@ -1,0 +1,30 @@
+#fourthSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+#fourthSection img {
+    height: 25rem;
+    width: 23rem;
+    object-fit: cover;
+
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+
+    transition: 0.5s;
+}
+
+#fourthSection img:hover {
+    transform: scale(1.1);
+}
+
+#fourthSection h1 {
+    font-size: 2.5rem;
+}
+
+#fourthSection p {
+    font-size: 1.3rem;
+}
